@@ -1,1 +1,13 @@
+li:nth-child(2n) {
+  color: blue;
+}
 
+li:before {
+  content: '#';
+  color: green;
+  padding-right: 20px;
+}
+
+li {
+  list-style: none;
+}
