@@ -1,5 +1,7 @@
 body {
   background-color: floralwhite;
+  margin: auto;
+  max-width: 600px;
 }
 
 header {
