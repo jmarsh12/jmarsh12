@@ -1,33 +1,49 @@
 body {
   background-color: floralwhite;
+  display: inline-grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto auto;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
 header {
-  background-color: darkolivegreen;
+  grid-column: 2;
+  grid-row: 1;
+  margin: auto;
 }
 
 h1 {
   font-family: Trebuchet MS, sans-serif;
   color: floralwhite;
+  background-color: darkolivegreen;
+  text-align: center;
+}
+
+p {
+  text-align: center;
 }
 
 .rot {
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 3;
   max-width: 400px;
 }
 
 .white-space {
   grid-column: 2;
-  grid-row: 1;
+  grid-row: 3;
   max-width: 400px;
 }
 
 .alignment {
   grid-column: 3;
-  grid-row: 1;
+  grid-row: 3;
   max-width: 400px;
 }
 
