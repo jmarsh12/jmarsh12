@@ -10,6 +10,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 75%;
+  box-shadow: 2px 2px 4px #504f4f;
 }
 
 header {
@@ -23,6 +24,8 @@ h1 {
   color: floralwhite;
   background-color: darkolivegreen;
   text-align: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #504f4f;
 }
 
 p {
