@@ -111,8 +111,6 @@ p {
     border-color: floralwhite;
 }
 
-/* Audience Page Exclusive */
-
 #audience-main {
     display: flex;
     flex-direction: column;
@@ -152,7 +150,6 @@ p {
     border-color: floralwhite;
     text-align: center;
 }
-/* Typography Page Exclusive */
 
 #typ-main {
     display: flex;
@@ -169,8 +166,6 @@ p {
     text-align: center;
     width: 85%;
 }
-
-/* Color Page Exclusive */
 
 #color-main {
     display: flex;
