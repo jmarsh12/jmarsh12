@@ -15,6 +15,7 @@ body {
   grid-template-rows: repeat(6, 1fr);
   justify-items: center;
   grid-gap: 0;
+  box-shadow: 0px 0px 3px 3px silver;
 }
 
 .info-titles {
@@ -28,6 +29,7 @@ body {
 .info-titles2 {
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
+  text-shadow: 0.25px 0.25px black;
   color: #001b36;
   margin-bottom: 5px;
 }
@@ -43,13 +45,17 @@ body {
   margin: 0 auto;
 }
 .headinglogo {
+  grid-column: 1;
+  grid-row: 1;
+  display: block;
+  padding-top: 30px;
+}
+
+.headingwriting {
   font-family: 'Rubik', sans-serif;
   grid-column: 1;
   grid-row: 1;
-  display: flex;
-  font-size: x-small;
-  justify-content: center;
-  align-items: center;
+  display: block;
 }
 .headingname {
   font-family: 'Rubik', sans-serif;
@@ -58,6 +64,7 @@ body {
   font-size: x-small;
   display: flex;
   align-items: center;
+  font-size: 14px;
 }
 .blue {
   background-color: #001b36;
@@ -74,10 +81,15 @@ body {
   color: #203751;
 }
 
+.bosden {
+  font-family: 'Roboto', sans-serif;
+}
+
 .lightGrey {
   background-color: #f1f1f1;
   width: 100%;
   text-align: center;
+  color: #001b36;
 }
 
 #date {
@@ -134,7 +146,7 @@ body {
 
 #thank-you {
   font-family: 'Rubik', sans-serif;
-  grid-column: 2;
+  grid-column: 1/4;
   grid-row: 6;
 }
 #barcode {
@@ -143,6 +155,12 @@ body {
   text-align: center;
   margin-top: 25px;
 }
+
+.grey-text {
+  color: #001b36;
+  margin: 0;
+}
+
 @media screen and (max-width: 780px) {
   /*half screen*/
   #main-content {
