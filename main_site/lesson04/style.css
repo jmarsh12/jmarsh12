@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Roboto&display=swap");
+
+html {
+    margin: -10px;
+    background-color: floralwhite;
+}
+
+header {
+    background-color: darkslategray;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    display: flex;
+    color: floralwhite;
+    padding: 10px;
+}
+
+#title {
+    margin: 20px 0px 0px -10px;
+    padding-left: 20px;
+}
+
+nav {
+    padding-top: -50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: darkolivegreen;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: floralwhite;
+    text-align: center;
+    font-size: 15pt;
+    transition: 0.5s;
+    padding: 30px 16px;
+    text-decoration: none;
+    max-height: 20px;
+}
+
+nav li a:hover:not(.active) {
+    font-size: 18pt;
+    transition: 0.5s;
+    background-color: darkslategray;
+}
+
+main {
+    margin: 30px 80px;
+    font-family: "Roboto", sans-serif;
+    color: #343434;
+}
+
+h1 {
+    font-weight: 1000;
+    font-size: 35pt;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 20pt;
+    font-weight: 900;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 16pt;
+    font-style: italic;
+}
+
+main p {
+    font-weight: 400;
+    font-size: 12pt;
+    margin-top: -10px;
+}
+
+#hero {
+    height: 150px;
+    width: 100%;
+    background-size: 200px 100%;
+}
+
+#forecast-summary {
+    float: left;
+    background-color: burlywood;
+    margin: 15px 20px;
+    padding: 10px;
+    max-width: 150px;
+    max-height: 100px;
+}
+
+#five-day {
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+
+#five-day ul {
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+
+    background-color: darkolivegreen;
+}
+
+#five-day ul li {
+    padding: 14px 80px;
+    display: inline-block;
+}
+
+#five-day li img {
+    font-size: 15pt;
+    transition: 0.5s;
+}
+
+#five-day li img:hover:not(.active) {
+    width: 55px;
+    transition: 0.5s;
+    background-color: darkolivegreen;
+}
+
+#main-body {
+    grid-template-columns: 1fr 1fr;
+    padding: 14px 20px;
+    background-color: burlywood;
+    overflow: hidden;
+}
+
+#main-body-img {
+    float: right;
+    margin: 10px;
+}
+
+#footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 50px 0px;
+    color: floralwhite;
+    background-color: darkslategray;
+}
+
+#contact-img {
+    margin: auto;
+    grid-column: 2;
+}
+
+#contact-info {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto 1fr auto;
+    grid-column: 4;
+}
+
+#contact1 {
+    justify-self: start;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    margin-bottom: -30px;
+
+}
+
+#contact2 {
+    justify-self: start;
+    margin: 20px;
+    text-align: left;
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    width: 160px;
+    margin-bottom: -10px;
+}
+
+#social {
+    justify-self: start;
+    display: flex;
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    margin-bottom: 10px;
+    gap: 15px;
+}
+
+#last-updated {
+    display: inline;
+}
+
+footer {
+    font-family: "Archivo Narrow", sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    color: floralwhite;
+    background-color: darkolivegreen;
+    padding-bottom: 5px;
+}
+
+footer a {
+    color: floralwhite;
+}
+
+footer a:hover {
+    color: darkslategray;
+}
+
+.dropdown {
+    position: fixed;
+    visibility: collapse;
+}
+
+@media only screen and (max-width: 1280px) {
+    #five-day ul li {
+        padding: 14px 50px;
+    }
+
+}
+
+@media only screen and (max-width: 730px) {
+    .dropdown {
+        position: initial;
+        visibility: visible;
+        background-color: darkolivegreen;
+        color: floralwhite;
+        padding: 14.5px;
+        width: 100%;
+        border: none;
+        text-align: left;
+
+    }
+
+    nav li {
+        float: none;
+    }
+
+    .dropdown:hover {
+        background-color: darkslategray;
+    }
+
+    .content {
+        padding: 0 0px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: floralwhite;
+    }
+
+
+}
