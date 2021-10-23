@@ -58,6 +58,7 @@ main {
     margin: 30px 80px;
     font-family: "Roboto", sans-serif;
     color: #343434;
+    position: relative;
 }
 
 h1 {
@@ -84,11 +85,21 @@ main p {
 }
 
 #hero {
-    height: 200px;
+    height: auto;
     width: 100%;
     background-size: 700px 100%;
     background-repeat: no-repeat;
-    background-image: url(images/wind_and_fire.jpg);
+    /*background-image: url(images/wind_and_fire.jpg);*/
+    position: relative;
+    padding-top: 150px;
+}
+
+#banner-img {
+    display: inline-flex;
+    margin-top: -200px;
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 #img1 {
@@ -141,12 +152,15 @@ main p {
     max-height: 100px;
     text-wrap: none;
     color: floralwhite;
+    position: absolute;
 }
 
 #five-day {
     margin-top: 40px;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
+    /*padding-top: 100px;*/
+    color: floralwhite;
 }
 
 #five-day ul {
@@ -295,4 +309,19 @@ footer a:hover {
     }
 
 
+}
+
+@media only screen and (min-width: 400px) {
+    #banner-img {
+        width: 400px;
+        height: auto;
+        /*position: static;*/
+        /*transform: none;*/
+        /*margin: auto;*/
+    }
+
+    #hero {
+        width: 100%;
+        height: auto;
+    }
 }
