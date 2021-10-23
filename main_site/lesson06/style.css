@@ -102,6 +102,12 @@ main p {
     height: auto;
 }
 
+#banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
 #img1 {
     background-image: url(images/image1.jpg);
     background-repeat: no-repeat;
@@ -151,15 +157,19 @@ main p {
     max-width: 300px;
     max-height: 100px;
     text-wrap: none;
-    color: floralwhite;
+    /*color: floralwhite;*/
     position: absolute;
 }
 
 #five-day {
-    margin-top: 40px;
+    margin-top: 150px;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     /*padding-top: 100px;*/
+    /*color: floralwhite;*/
+}
+
+#day {
     color: floralwhite;
 }
 
@@ -197,6 +207,8 @@ main p {
 #main-body-img {
     float: right;
     margin: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
 #footer {
@@ -210,6 +222,8 @@ main p {
 #contact-img {
     margin: auto;
     grid-column: 2;
+    max-width: 100%;
+    height: auto;
 }
 
 #contact-info {
@@ -224,7 +238,6 @@ main p {
     grid-column: 1 / span 3;
     grid-row: 1;
     margin-bottom: -30px;
-
 }
 
 #contact2 {
