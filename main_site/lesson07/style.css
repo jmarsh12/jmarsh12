@@ -3,6 +3,7 @@
 body {
     font-family: 'Akronim', cursive;
     position: relative;
+    background-color: floralwhite;
 }
 
 body p {
@@ -24,21 +25,45 @@ body p {
     height: 150px;
     align-items: center;
     padding: 0px 20%;
-    background: rgb(34,193,195);
-    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(48,237,22,1) 100%);
-
+    background-color: darkslategray;
 }
 
 #website_logo {
     height: 100%;}
 
 nav {
-    color: white;
-    background-color: black;
-    padding: 0px 20%;
-    cursor: pointer;
-    z-index: 2;
-    border: 1px solid black;
+    padding-top: -50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: darkolivegreen;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: floralwhite;
+    text-align: center;
+    font-size: 15pt;
+    transition: 0.5s;
+    padding: 30px 16px;
+    text-decoration: none;
+    max-height: 20px;
+}
+
+nav li a:hover:not(.active) {
+    font-size: 18pt;
+    transition: 0.5s;
+    background-color: darkslategray;
 }
 
 #menu {
@@ -49,30 +74,12 @@ nav *{
     list-style-type: none;
 }
 
-nav .content {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 0;
-}
-
-nav .content li {
-    height: 40px;
-    line-height: 40px;
-    padding: 0px 5px;
-}
-
-nav .content li a:visited, nav .content li a:active, a
-{ color: white;
-    text-decoration: none;
-}
-
-nav .content li a:hover {
-    color: green;
-    text-decoration: underline;
-}
-
 .content {
     margin: 0;
+}
+
+#seasons {
+    color: floralwhite;
 }
 
 h2 {
@@ -92,7 +99,6 @@ h2 {
     width: 90%;
     height: auto;
     margin: auto;
-    /* animation-name: bounce; */
     animation-timing-function: ease-in;
     animation-duration: 500ms;
 }
@@ -126,17 +132,25 @@ figure {
     display: flex;
     justify-content: space-between;
     border: 2px solid black;
-    background: rgb(34,193,195);
-    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(48,237,22,1) 100%);
+    background-color: darkolivegreen;
+}
+
+#contact-img {
+    max-width: 100%;
+    height: auto;
 }
 
 #map {
-    width: 250px;
+    width: 350px;
 }
-
 
 footer img {
     width: 10%;
+    height: auto;
+}
+
+footer {
+    background-color: darkslategray;
 }
 
 #contact_info {
@@ -153,14 +167,14 @@ footer img {
     margin: 0;
 }
 
-#social_media img {
+#social img {
     width: 40px;
 }
 
-#copyRight {
+#copyright {
     text-align: center;
-    color: white;
-    background-color: black;
+    color: floralwhite;
+    background-color: darkolivegreen;
     margin: 0;
     padding: 5px;
     position: sticky;
@@ -169,7 +183,7 @@ footer img {
     right: 0;
 }
 
-#copyRight a {
-    color: lightgreen;
+#copyright a {
+    color: darkslategray;
     text-decoration: underline;
 }
