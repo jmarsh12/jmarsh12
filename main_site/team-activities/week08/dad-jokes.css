@@ -1,0 +1,55 @@
+body {
+  background-color: #39ff14;
+}
+img {
+  border-radius: 10px;
+}
+button {
+  background-color: slateblue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 3px 3px yellow;
+  display: float;
+  margin-top: 750px;
+}
+
+button:hover {
+  background-color: slategray;
+}
+
+button:active {
+  cursor: pointer;
+  transform: translateY(3px);
+}
+p {
+  position: absolute;
+  top: 17px;
+  left: 50px;
+}
+#dad-img {
+  position: relative;
+  z-index: -1;
+}
+
+img {
+  position: absolute;
+  z-index: -1;
+}
+
+.dad-bg {
+  top: 5%;
+  position: absolute;
+  width: 40%;
+}
+
+@media screen and (max-width: 740px) {
+  .dad-bg {
+    width: 60%;
+  }
+}
