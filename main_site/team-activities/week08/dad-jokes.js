@@ -22,6 +22,6 @@ function drawJoke(joke) {
     if (joke.length >= 80) {
         div.style.fontSize = "24pt";
     } else {
-        div.style.fontSize = "48pt";
+        div.style.fontSize = "42pt";
     }
 }
