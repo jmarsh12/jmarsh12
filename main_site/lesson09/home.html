@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="media_queries.css">
+    <script src="home.js" defer></script>
+    <title>Home Page</title>
+</head>
+<body>
+
+<header>
+    <div id="top_bar">
+        <img
+                src="../lesson03/images/sparrow.png"
+                alt="Icon"
+                id="website_logo"
+        />
+        <div>
+            <h1>Seasons</h1>
+            <p id="motto">
+                What's your perfect weather?
+            </p>
+        </div>
+    </div>
+    <nav>
+        <button id="menu" onclick="drop()">&#9776;</button>
+        <ul class="content">
+            <li><a href="./home.html" id="active">Home</a></li>
+            <li><a href="../lesson06/preston-6.html">Preston</a></li>
+            <li><a href=".">Soda Springs</a></li>
+            <li><a href=".">Fish Haven</a></li>
+            <li><a href="../lesson08/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson07/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div id="fish_heaven">
+        <h2>
+            Fish Haven
+        </h2>
+        <img src="../lesson07/images/lake.jpg" alt="fish heaven">
+    </div>
+    <div id="preston">
+        <h2>
+            Preston
+        </h2>
+        <img src="../lesson07/images/canyon.jpg" alt="preston">
+    </div>
+    <div id="soda_springs">
+        <h2>
+            Soda Springs
+        </h2>
+        <img src="../lesson07/images/river-arch.jpg" alt="soda springs">
+    </div>
+
+
+</main>
+<footer>
+    <div id="contact_box">
+        <img id="map" src="../lesson06/images/rexburg_map.png" alt="map" />
+
+        <div id="contact_info">
+            <h5>Contact Us!</h5>
+            <p>
+                <img src="../lesson06/images/apple_maps.png" alt="location" />Preston Town
+            </p>
+            <p>
+                <img src="../lesson06/images/phone.png" alt="phone" />(123)-456-7890
+            </p>
+            <p>
+                <img src="../lesson06/images/apple-email.jpg" alt="email" />naweath@newageweather.com
+            </p>
+            <span id="social_media"
+            ><a href="https://www.facebook.com/"
+            ><img src="../lesson06/images/facebook.png" alt="facebook" id="facebook"
+            /></a>
+                  <a href="https://www.instagram.com/"
+                  ><img
+                          src="../lesson06/images/instagram.png"
+                          alt="instagram"
+                          id="instagram" /></a
+                  ></span>
+        </div>
+    </div>
+
+    <p id="copyRight">
+        <b
+        >&copy;2021 | Jeff A. Marsh | Idaho |
+            <a href="https://www.byui.edu/" target="_blank"
+            >Brigham Young University Idaho</a
+            >
+        </b>
+    </p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>
