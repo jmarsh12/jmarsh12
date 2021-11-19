@@ -6,6 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <link href="style.css" rel="stylesheet"/>
     <script src="script.js" defer></script>
+    <script src="preston-API.js" defer></script>
     <title>Preston Weather</title>
 </head>
 <body>
@@ -49,17 +50,13 @@
     <div id="hero">
         <div id="forecast-summary">
             <h4>Forecast Summary</h4>
-            <p class="summary-content">
-                Currently: overcast clouds <br>
-
-                Temperature: 42 F° <br>
-
-                Wind Chill: 39 F° <br>
-
-                Humidity: 78% <br>
-
-                Wind Speed: 5.26MPH
-            </p>
+            <div class="summary-content">
+                <p>Currently: <span id="current"></span></p>
+                <p>Temperature: <span id="temp"></span> F&#176;</p>
+                <p>Wind Chill: <span id="windchill"></span> F&#176;</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windspeed"></span>MPH</p>
+            </div>
         </div>
         <picture id="banner-img">
             <source media="(max-width:400px)" srcset="images/wind_and_fire_small.jpg">
@@ -69,43 +66,66 @@
     </div>
     <div id="five-day">
         <h4>Five Day Forecast</h4>
-        <ul>
-            <li id="img1">
-                <p id="day">
-                    Mon <br>
-                    43 F°
-                </p>
-<!--                <img alt="day of the week" height="50px" src="images/image1.jpg" width="50px"/>-->
-            </li>
-            <li id="img2">
-                <p id="day">
-                    Tue <br>
-                    36 F°
-                </p>
-<!--                <img alt="day of the week" height="50px" src="images/placeholder.png" width="50px"/>-->
-            </li>
-            <li id="img3">
-                <p id="day">
-                    Wed <br>
-                    38 F°
-                </p>
-<!--                <img alt="day of the week" height="50px" src="images/placeholder.png" width="50px"/>-->
-            </li>
-            <li id="img4">
-                <p id="day">
-                    Thu <br>
-                    36 F°
-                </p>
-<!--                <img alt="day of the week" height="50px" src="images/placeholder.png" width="50px"/>-->
-            </li>
-            <li id="img5">
-                <p id="day">
-                    Fri <br>
-                    41 F°
-                </p>
-<!--                <img alt="day of the week" height="50px" src="images/placeholder.png" width="50px"/>-->
-            </li>
-        </ul>
+        <table style="width:100%">
+            <tr id="table-days">
+                <th><span id="day1">Mon</span></th>
+                <th><span id="day2">Tue</span></th>
+                <th><span id="day3">Wed</span></th>
+                <th><span id="day4">Thu</span></th>
+                <th><span id="day5">Fri</span></th>
+            </tr>
+            <tr id="table-images">
+                <td><span id="imagesrc1"></span> <img id="icon1"></td>
+                <td><span id="imagesrc2"></span> <img id="icon2"></td>
+                <td><span id="imagesrc3"></span> <img id="icon3"></td>
+                <td><span id="imagesrc4"></span> <img id="icon4"></td>
+                <td><span id="imagesrc5"></span> <img id="icon5"></td>
+            </tr>
+            <tr id="table-temp">
+                <td><span id="temp1"></span> F&#176;
+                <td><span id="temp2"></span> F&#176;
+                <td><span id="temp3"></span> F&#176;
+                <td><span id="temp4"></span> F&#176;
+                <td><span id="temp5"></span> F&#176;
+            </tr>
+        </table>
+<!--        <ul>-->
+<!--            <li id="img1">-->
+<!--                <p id="day">-->
+<!--                    Mon <br>-->
+<!--                    43 F°-->
+<!--                </p>-->
+<!--&lt;!&ndash;                <img alt="day of the week" height="50px" src="images/image1.jpg" width="50px"/>&ndash;&gt;-->
+<!--            </li>-->
+<!--            <li id="img2">-->
+<!--                <p id="day">-->
+<!--                    Tue <br>-->
+<!--                    36 F°-->
+<!--                </p>-->
+<!--&lt;!&ndash;                <img alt="day of the week" height="50px" src="images/placeholder.png" width="50px"/>&ndash;&gt;-->
+<!--            </li>-->
+<!--            <li id="img3">-->
+<!--                <p id="day">-->
+<!--                    Wed <br>-->
+<!--                    38 F°-->
+<!--                </p>-->
+<!--&lt;!&ndash;                <img alt="day of the week" height="50px" src="images/placeholder.png" width="50px"/>&ndash;&gt;-->
+<!--            </li>-->
+<!--            <li id="img4">-->
+<!--                <p id="day">-->
+<!--                    Thu <br>-->
+<!--                    36 F°-->
+<!--                </p>-->
+<!--&lt;!&ndash;                <img alt="day of the week" height="50px" src="images/placeholder.png" width="50px"/>&ndash;&gt;-->
+<!--            </li>-->
+<!--            <li id="img5">-->
+<!--                <p id="day">-->
+<!--                    Fri <br>-->
+<!--                    41 F°-->
+<!--                </p>-->
+<!--&lt;!&ndash;                <img alt="day of the week" height="50px" src="images/placeholder.png" width="50px"/>&ndash;&gt;-->
+<!--            </li>-->
+<!--        </ul>-->
     </div>
     <div id="main-body">
         <div>
