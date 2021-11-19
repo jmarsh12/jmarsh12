@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="script.js" defer></script>
+    <title>Preston Weather</title>
+</head>
+<body>
+<header>
+    <img alt="logo" height="150px" src="images/sparrow.png" width="150px"/>
+    <div id="title">
+        <h1>Preston Weather</h1>
+        <h2>The best weather news this side of the US!</h2>
+    </div>
+</header>
+
+<nav>
+    <button class="dropdown">
+        <img alt="menu" height="50px" src="images/dropdown.png" width="50px"/>
+    </button>
+    <div class="content">
+        <ul>
+            <li>
+                <a href="../lesson03/index.html"> Home </a>
+            </li>
+            <li>
+                <a href="preston-6.html"> Preston </a>
+            </li>
+            <li>
+                <a href="preston-6.html"> Soda Springs </a>
+            </li>
+            <li>
+                <a href="preston-6.html"> Fish Haven </a>
+            </li>
+            <li>
+                <a href="preston-6.html"> Storm Center </a>
+            </li>
+            <li>
+                <a href="../lesson07/gallery.html"> Gallery </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <h2>Preston Idaho</h2>
+    <div id="hero">
+        <div id="forecast-summary">
+            <h4>Forecast Summary</h4>
+            <p class="summary-content">
+                Currently: overcast clouds <br>
+
+                Temperature: 42 F° <br>
+
+                Wind Chill: 39 F° <br>
+
+                Humidity: 78% <br>
+
+                Wind Speed: 5.26MPH
+            </p>
+        </div>
+        <picture id="banner-img">
+            <source media="(max-width:400px)" srcset="images/wind_and_fire_small.jpg">
+            <source media="(max-width:800px)" srcset="images/wind_and_fire_medium.jpg">
+            <img src="images/wind_and_fire.jpg" width="700px" alt="banner" id="banner">
+        </picture>
+    </div>
+    <div id="five-day">
+        <h4>Five Day Forecast</h4>
+        <ul>
+            <li id="img1">
+                <p id="day">
+                    Mon <br>
+                    43 F°
+                </p>
+<!--                <img alt="day of the week" height="50px" src="images/image1.jpg" width="50px"/>-->
+            </li>
+            <li id="img2">
+                <p id="day">
+                    Tue <br>
+                    36 F°
+                </p>
+<!--                <img alt="day of the week" height="50px" src="images/placeholder.png" width="50px"/>-->
+            </li>
+            <li id="img3">
+                <p id="day">
+                    Wed <br>
+                    38 F°
+                </p>
+<!--                <img alt="day of the week" height="50px" src="images/placeholder.png" width="50px"/>-->
+            </li>
+            <li id="img4">
+                <p id="day">
+                    Thu <br>
+                    36 F°
+                </p>
+<!--                <img alt="day of the week" height="50px" src="images/placeholder.png" width="50px"/>-->
+            </li>
+            <li id="img5">
+                <p id="day">
+                    Fri <br>
+                    41 F°
+                </p>
+<!--                <img alt="day of the week" height="50px" src="images/placeholder.png" width="50px"/>-->
+            </li>
+        </ul>
+    </div>
+    <div id="main-body">
+        <div>
+            <h4>Fall</h4>
+            <p>
+                <img alt="article image" height="500px" id="main-body-img" src="images/article_image.jpg" width="500px"/>
+                Autumn, also known as fall in the United States, is one of the four temperate seasons. Outside the tropics,
+                autumn marks the transition from summer to winter, in September or March depending on your hemisphere.
+                Autumn is the season when the duration of daylight becomes noticeably shorter and the temperature cools
+                considerably. Day length decreases and night length increases as the season progresses until the Winter
+                Solstice in December and June depending on your hemisphere. One of its main features in temperate climates
+                is the striking change in color for the leaves of deciduous trees as they prepare to shed. <br><br>
+
+                (Info from Wikipedia)
+            </p>
+        </div>
+    </div>
+</main>
+<footer>
+    <div id="footer">
+        <section id="contact-img">
+            <img alt="map" height="160px" src="images/rexburg_map.png" width="300px"/>
+        </section>
+        <section id="contact-info">
+            <h2 id="contact1">Contact Us</h2>
+            <section id="contact2">
+                <h3><img height="30px" src="images/apple_maps.png" width="30px"> Location<br><img height="30px"
+                                                                                                  src="images/phone.png"
+                                                                                                  width="30px">
+                    Phone<br><img height="30px" src="images/apple-email.jpg" width="30px"> naweath@newageweather.com</h3>
+            </section>
+            <section id="social">
+                <a href="https://www.instagram.com">
+                    <img id="instagram" height="50px" src="images/instagram.png" width="50px" alt="instagram">
+                </a>
+                <a href="https://www.youtube.com">
+                    <img id="youtube" height="50px" src="images/youtube.png" width="50px" alt="youtube">
+                </a>
+                <a href="https://www.facebook.com">
+                    <img id="facebook" height="50px" src="images/facebook.png" width="50px" alt="facebook">
+                </a>
+            </section>
+        </section>
+    </div>
+    <p>
+        © 2021 | Jeff A. Marsh | Idaho |
+        <a href="https://byui.edu">Brigham Young University - Idaho</a>
+    </p>
+    <p>
+        <span id="last-updated"></span>
+    </p>
+</footer>
+</body>
+</html>
