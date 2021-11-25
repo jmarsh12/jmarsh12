@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="script.js" defer></script>
+    <script src="preston-API.js" defer></script>
+    <title>Fish Haven Weather</title>
+</head>
+<body>
+<header>
+    <img alt="logo" height="150px" src="images/sparrow.png" width="150px"/>
+    <div id="title">
+        <h1>Fish Haven Weather</h1>
+        <h2>The best weather news this side of the US!</h2>
+    </div>
+</header>
+
+<nav>
+    <button class="dropdown">
+        <img alt="menu" height="50px" src="images/dropdown.png" width="50px"/>
+    </button>
+    <div class="content">
+        <ul>
+            <li>
+                <a href="../lesson09/home.html"> Home </a>
+            </li>
+            <li>
+                <a href="../lesson10/preston-10.html"> Preston </a>
+            </li>
+            <li>
+                <a href="soda-springs-11.html"> Soda Springs </a>
+            </li>
+            <li>
+                <a href="fish-haven-11.html"> Fish Haven </a>
+            </li>
+            <li>
+                <a href="../lesson08/stormcenter.html"> Storm Center </a>
+            </li>
+            <li>
+                <a href="../lesson07/gallery.html"> Gallery </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <h2>Preston Idaho</h2>
+    <div id="hero">
+        <div id="forecast-summary">
+            <h4>Forecast Summary</h4>
+            <div class="summary-content">
+                <p>Currently: <span id="current"></span></p>
+                <p>Temperature: <span id="temp"></span> F&#176;</p>
+                <p>Wind Chill: <span id="windchill"></span> F&#176;</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windspeed"></span>MPH</p>
+            </div>
+        </div>
+        <picture id="banner-img">
+            <source media="(max-width:400px)" srcset="images/umbrella.png">
+            <source media="(max-width:800px)" srcset="images/umbrella-medium.png">
+            <img src="images/umbrella-large.png" width="700px" alt="banner" id="banner">
+        </picture>
+    </div>
+    <div id="five-day">
+        <h4>Five Day Forecast</h4>
+        <table style="width:100%">
+            <tr id="table-days">
+                <th><span id="day1">Mon</span></th>
+                <th><span id="day2">Tue</span></th>
+                <th><span id="day3">Wed</span></th>
+                <th><span id="day4">Thu</span></th>
+                <th><span id="day5">Fri</span></th>
+            </tr>
+            <tr id="table-images">
+                <td><span id="imagesrc1"></span> <img id="icon1"></td>
+                <td><span id="imagesrc2"></span> <img id="icon2"></td>
+                <td><span id="imagesrc3"></span> <img id="icon3"></td>
+                <td><span id="imagesrc4"></span> <img id="icon4"></td>
+                <td><span id="imagesrc5"></span> <img id="icon5"></td>
+            </tr>
+            <tr id="table-temp">
+                <td><span id="temp1"></span> F&#176;
+                <td><span id="temp2"></span> F&#176;
+                <td><span id="temp3"></span> F&#176;
+                <td><span id="temp4"></span> F&#176;
+                <td><span id="temp5"></span> F&#176;
+            </tr>
+        </table>
+<!--        <ul>-->
+<!--            <li id="img1">-->
+<!--                <p id="day">-->
+<!--                    Mon <br>-->
+<!--                    43 F°-->
+<!--                </p>-->
+<!--&lt;!&ndash;                <img alt="day of the week" height="50px" src="images/image1.jpg" width="50px"/>&ndash;&gt;-->
+<!--            </li>-->
+<!--            <li id="img2">-->
+<!--                <p id="day">-->
+<!--                    Tue <br>-->
+<!--                    36 F°-->
+<!--                </p>-->
+<!--&lt;!&ndash;                <img alt="day of the week" height="50px" src="images/placeholder.png" width="50px"/>&ndash;&gt;-->
+<!--            </li>-->
+<!--            <li id="img3">-->
+<!--                <p id="day">-->
+<!--                    Wed <br>-->
+<!--                    38 F°-->
+<!--                </p>-->
+<!--&lt;!&ndash;                <img alt="day of the week" height="50px" src="images/placeholder.png" width="50px"/>&ndash;&gt;-->
+<!--            </li>-->
+<!--            <li id="img4">-->
+<!--                <p id="day">-->
+<!--                    Thu <br>-->
+<!--                    36 F°-->
+<!--                </p>-->
+<!--&lt;!&ndash;                <img alt="day of the week" height="50px" src="images/placeholder.png" width="50px"/>&ndash;&gt;-->
+<!--            </li>-->
+<!--            <li id="img5">-->
+<!--                <p id="day">-->
+<!--                    Fri <br>-->
+<!--                    41 F°-->
+<!--                </p>-->
+<!--&lt;!&ndash;                <img alt="day of the week" height="50px" src="images/placeholder.png" width="50px"/>&ndash;&gt;-->
+<!--            </li>-->
+<!--        </ul>-->
+    </div>
+    <div id="main-body">
+        <div>
+            <h4>Spring</h4>
+            <p>
+                <img alt="article image" height="500px" id="main-body-img" src="images/spring.jpg" width="500px"/>
+                Spring, also known as springtime, is one of the four temperate seasons, succeeding winter and preceding
+                summer. There are various technical definitions of spring, but local usage of the term varies according
+                to local climate, cultures and customs. When it is spring in the Northern Hemisphere, it is autumn in
+                the Southern Hemisphere and vice versa. At the spring (or vernal) equinox, days and nights are
+                approximately twelve hours long, with daytime length increasing and nighttime length decreasing
+                as the season progresses. Spring and "springtime" refer to the season, and also to ideas of rebirth,
+                rejuvenation, renewal, resurrection and regrowth. Subtropical and tropical areas have climates better
+                described in terms of other seasons, e.g. dry or wet, monsoonal or cyclonic. Cultures may have local
+                names for seasons which have little equivalence to the terms originating in Europe. <br><br>
+
+                (Info from Wikipedia)
+            </p>
+        </div>
+    </div>
+</main>
+<footer>
+    <div id="footer">
+        <section id="contact-img">
+            <img alt="map" height="160px" src="images/rexburg_map.png" width="300px"/>
+        </section>
+        <section id="contact-info">
+            <h2 id="contact1">Contact Us</h2>
+            <section id="contact2">
+                <h3><img height="30px" src="images/apple_maps.png" width="30px"> Location<br><img height="30px"
+                                                                                                  src="images/phone.png"
+                                                                                                  width="30px">
+                    Phone<br><img height="30px" src="images/apple-email.jpg" width="30px"> naweath@newageweather.com</h3>
+            </section>
+            <section id="social">
+                <a href="https://www.instagram.com">
+                    <img id="instagram" height="50px" src="images/instagram.png" width="50px" alt="instagram">
+                </a>
+                <a href="https://www.youtube.com">
+                    <img id="youtube" height="50px" src="images/youtube.png" width="50px" alt="youtube">
+                </a>
+                <a href="https://www.facebook.com">
+                    <img id="facebook" height="50px" src="images/facebook.png" width="50px" alt="facebook">
+                </a>
+            </section>
+        </section>
+    </div>
+    <p>
+        © 2021 | Jeff A. Marsh | Idaho |
+        <a href="https://byui.edu">Brigham Young University - Idaho</a>
+    </p>
+    <p>
+        <span id="last-updated"></span>
+    </p>
+</footer>
+</body>
+</html>
