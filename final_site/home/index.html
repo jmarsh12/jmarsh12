@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../scss/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Serif+Pro:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="../js/script.js" defer></script>
+    <title>Temple Inn & Suites</title>
+  </head>
+  <body>
+    <header>
+      <img src="../images/logo.png" alt="icon" id="website_logo" />
+      <div id="head">
+        <h2 id="heading">Temple Inn & Suites</h2>
+        <p id="motto">Come to see the temple!</p>
+      </div>
+      <nav>
+        <button id="menu_button" onclick="dropMenuContent()">&#9776;</button>
+        <ul class="content">
+          <li id="active"><a href=".">Home</a></li>
+          <li><a href="../temples/temples.html">Temple</a></li>
+          <li><a href="../reservations/reservations.html">Reservation</a></li>
+          <li><a href="../service-missionaries/service.html">Service</a></li>
+          <li><a href="../contact-us/contact-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article id="home_temple_article">
+        <img src="../images/LA-temple.jpg" alt="Los Angeles California Temple" />
+        <h1>Los Angeles California Temple</h1>
+        <p>
+          The Los Angeles Temple was announced on March 23, 1937, by church president Heber J. Grant,
+          when the church purchased 24.23 acres (98,000 m2) from the Harold Lloyd Motion Picture Company.
+          Construction was to begin soon thereafter, but financial difficulties relating to the
+          Great Depression and World War II delayed the groundbreaking until 1951.[2] The temple plans were
+          revised at this time to include a priesthood assembly room, an unusual feature in temples built
+          after the Salt Lake Temple. It was also expanded to accommodate an unprecedented 300 patrons per session.
+          It is the second-largest temple in the world.
+        </p>
+      </article>
+      <div id="make_reservation_action">
+        <input type="button" onclick="location.href='../reservations/reservations.html'" value="RESERVE NOW!" />
+      </div>
+      <div class="contact_info">
+        <p class="phone_no">Phone: (555)-555-5555</p>
+        <p class="email">Email: ilovetoseethetemple@ldstemples.com</p>
+        <p class="address">Address: 4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+      </div>
+    </main>
+
+    <footer>
+      <p id="copyRight">
+        <b
+          >&copy;2021 | Jeff Marsh | Brigham Young University - Idaho
+          <a href="https://www.byui.edu" target="_blank"
+            ></a
+          >
+        </b>
+      </p>
+    </footer>
+  </body>
+</html>

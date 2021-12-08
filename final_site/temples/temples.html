@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../scss/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Serif+Pro:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="../js/script.js" defer></script>
+    <title>Temple Inn & Suites</title>
+  </head>
+  <body onload="templePageStuff()">
+    <header>
+      <img src="../images/logo.png" alt="icon" id="website_logo" />
+      <div id="head">
+        <h2 id="heading">Temple Inn & Suites</h2>
+        <p id="motto">Come to see the temple!</p>
+      </div>
+      <nav>
+        <button id="menu_button" onclick="dropMenuContent()">&#9776;</button>
+        <ul class="content">
+          <li><a href="../home/index.html">Home</a></li>
+          <li id="active"><a href="../temples/temples.html">Temple</a></li>
+          <li><a href="../reservations/reservations.html">Reservation</a></li>
+          <li><a href="../service-missionaries/service.html">Service</a></li>
+          <li><a href="../contact-us/contact-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="container">
+        <div class="subContainer">
+          <img src="../images/kcmo-temple.jpg" alt="" />
+          <div class="weather">
+            <h3>Weather Summary</h3>
+            <div>
+              Currently: <span class="current-weather"></span> <br />
+              High: <span class="high"></span>°F<br />
+              Wind Chill: <span class="wind-chill"></span>°F<br />
+              Humidity: <span class="humidity"></span>%<br />
+              Wind Speed: <span class="wind-speed"></span>mph
+            </div>
+          </div>
+
+          <p><span class="bold_char">phone:</span> 816-413-1430</p>
+          <br />
+          <p>
+            <span class="bold_char">Temple Services: </span> <br />Clothing
+            rental available <br />
+            No cafeteria available <br />
+            No patron housing available <br />
+            No distribution center nearby
+          </p>
+          <br />
+          <p>
+            <span class="bold_char">Temple Closure Schedule:</span> <br />
+            Friday, 24 December 2021 - Saturday, 25 December 2021 <br />
+            Friday, 31 December 2021 (Limited Operations) <br /> <br />
+
+            Saturday, 1 January 2022 <br />
+            Saturday, 2 April 2022 <br />
+            Monday, 18 April 2022 - Monday, 25 April 2022 <br />
+            Monday, 19 September 2022 - Monday, 19 December 2022 <br />
+            Saturday, 24 December 2022 <br />
+          </p>
+          <br />
+          <p class="temple_history">
+            <span class="bold_char">Temple History:</span><br /> The announcement of the new temple was made on
+            October 4, 2008, during the church's 178th Semiannual general conference by LDS Church president
+            Thomas S. Monson. When the announcement was made, Monson did not specify whether the temple would be
+            constructed in Kansas or Missouri.[5] However, a later press release confirmed that the temple would be
+            built in the Shoal Creek development in Clay County, Missouri, within the city boundaries of Kansas City.
+            This was the second temple of the LDS Church built in Missouri, after the St. Louis Missouri Temple.
+          </p>
+          <br />
+        </div>
+        <div class="subContainer">
+          <img src="../images/LA-temple.jpg" alt="" />
+          <div class="weather">
+            <h3>Weather Summary</h3>
+            <div>
+              Currently: <span class="current-weather"></span> <br />
+              High: <span class="high"></span>°F<br />
+              Wind Chill: <span class="wind-chill"></span>°F<br />
+              Humidity: <span class="humidity"></span>%<br />
+              Wind Speed: <span class="wind-speed"></span>mph
+            </div>
+          </div>
+          <p><span class="bold_char">Telephone:</span> (310) 474-5569</p>
+          <br />
+          <p>
+            <span class="bold_char">Temple Services: </span> <br />Clothing
+            rental available <br />
+            No cafeteria available <br />
+            No patron housing available <br />
+            Distribution center nearby
+          </p>
+          <br />
+          <p>
+            <span class="bold_char">Temple Closure Schedule:</span> <br />
+            Friday, 24 December 2021 - Saturday, 25 December 2021 <br />
+            Friday, 31 December 2021 <br /> <br />
+
+            Saturday, 1 January 2022 <br />
+            Monday, 14 February 2022 - Monday, 28 February 2022 <br />
+            Saturday, 2 April 2022 <br />
+            Monday, 11 July 2022 - Monday, 1 August 2022 <br />
+            Saturday, 1 October 2022 <br />
+            Tuesday, 22 November 2022 - Thursday, 24 November 2022 <br />
+            Saturday, 24 December 2022 <br />
+            Saturday, 31 December 2022 <br />
+          </p>
+          <br />
+          <p class="temple_history">
+            <span class="bold_char">Temple History:</span><br />The Los Angeles Temple was announced on March 23, 1937,
+            by church president Heber J. Grant, when the church purchased 24.23 acres (98,000 m2) from the Harold
+            Lloyd Motion Picture Company. Construction was to begin soon thereafter, but financial difficulties
+            relating to the Great Depression and World War II delayed the groundbreaking until 1951.[2] The temple
+            plans were revised at this time to include a priesthood assembly room, an unusual feature in temples built
+            after the Salt Lake Temple. It was also expanded to accommodate an unprecedented 300 patrons per session.
+            It is the second-largest temple in the world.
+          </p>
+          <br />
+        </div>
+        <div class="subContainer">
+          <img src="../images/raleigh-temple.jpg" alt="" />
+          <div class="weather">
+            <h3>Weather Summary</h3>
+            <div>
+              Currently: <span class="current-weather"></span> <br />
+              High: <span class="high"></span>°F<br />
+              Wind Chill: <span class="wind-chill"></span>°F<br />
+              Humidity: <span class="humidity"></span>%<br />
+              Wind Speed: <span class="wind-speed"></span>mph
+            </div>
+          </div>
+          <p><span class="bold_char">Telephone:</span> 919-362-4135</p>
+          <br />
+          <p>
+            <span class="bold_char">Temple Services: </span> <br />No clothing
+            rental available <br />
+            No cafeteria available <br />
+            No patron housing available <br />
+            No distribution center nearby
+          </p>
+          <br />
+          <p>
+            <span class="bold_char">Temple Closure Schedule:</span> <br />
+            Monday, 8 November 2021 - Sunday, 2 January 2022 <br /> <br />
+
+            Saturday, 2 April 2022 - Sunday, 3 April 2022 <br />
+            Monday, 9 May 2022 - Monday, 23 May 2022 <br />
+            Saturday, 1 October 2022 - Sunday, 2 October 2022 <br />
+            Monday, 31 October 2022 - Monday, 14 November 2022 <br />
+            Wednesday, 23 November 2022 - Thursday, 24 November 2022 <br />
+            Saturday, 24 December 2022 <br />
+            Saturday, 31 December 2022 (Limited Operations) <br />
+          </p>
+          <br />
+          <p class="temple_history">
+            <span class="bold_char">Temple History:</span><br />Groundbreaking services for the Raleigh
+            North Carolina Temple, located in Apex, North Carolina, were held on February 6, 1999.
+            After the temple was completed, about 31,000 people toured the temple during the public open house.
+            LDS Church president Gordon B. Hinckley dedicated the temple on December 18, 1999.
+          </p>
+          <br />
+        </div>
+        <div class="subContainer">
+          <img src="../images/SDC-temple.jpg" alt="" />
+          <div class="weather">
+            <h3>Weather Summary</h3>
+            <div>
+              Currently: <span class="current-weather"></span> <br />
+              High: <span class="high"></span>°F<br />
+              Wind Chill: <span class="wind-chill"></span>°F<br />
+              Humidity: <span class="humidity"></span>%<br />
+              Wind Speed: <span class="wind-speed"></span>mph
+            </div>
+          </div>
+          <p><span class="bold_char">Telephone:</span> 858-622-0991</p>
+          <br />
+          <p>
+            <span class="bold_char">Temple Services: </span> <br />Clothing
+            rental available <br />
+            No cafeteria available <br />
+            No patron housing available <br />
+            Distribution center nearby
+          </p>
+          <br />
+          <p>
+            <span class="bold_char">Temple Closure Schedule:</span> <br />
+            Friday, 24 December 2021 - Saturday, 25 December 2021 <br />
+            Friday, 31 December 2021 <br /> <br />
+
+            Saturday, 1 January 2022 <br />
+            Monday, 14 March 2022 - Monday, 28 March 2022 <br />
+            Saturday, 2 April 2022 <br />
+            Saturday, 1 October 2022 <br />
+            Wednesday, 23 November 2022 - Thursday, 24 November 2022 <br />
+            Saturday, 24 December 2022 <br />
+            Saturday, 31 December 2022 <br />
+          </p>
+          <br />
+          <p class="temple_history">
+            <span class="bold_char">Temple History:</span><br />The San Diego Temple was announced on April 7, 1984,
+            and dedicated on April 25, 1993 by Gordon B. Hinckley. The temple was built on a 7.2-acre (2.9 ha) plot,
+            has 4 ordinance rooms and 8 sealing rooms, and has a total floor area of 72,000 square feet (6,700 m2).
+            Although there is no visitors' center, the church maintains the Mormon Battalion Historic Site in Old Town,
+            San Diego.
+          </p>
+          <br />
+        </div>
+      </div>
+      <div class="contact_info">
+        <p class="phone_no">Phone: (555)-555-5555</p>
+        <p class="email">Email: ilovetoseethetemple@ldstemples.com</p>
+        <p class="address">Address: 4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+      </div>
+    </main>
+
+    <footer>
+      <p id="copyRight">
+        <b
+          >&copy;2021 | Jeff Marsh | Brigham Young University - Idaho
+          <a href="https://www.byui.edu" target="_blank"
+            ></a
+          >
+        </b>
+      </p>
+    </footer>
+  </body>
+</html>
